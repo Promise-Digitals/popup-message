@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Popup Messages</title>
+</head>
+<body>
+    <div class="container">
+        <img src="/images/logo 1.png" class="logo">
+        <button class="btn" onclick="openPop()">Submit</button>
+        <div class="pop" id="Popup">
+            <img src="/images/tick.png" class="tick">
+            <h1>Thank You!</h1>
+            <p>Your details has been successfully submitted, Thanks!</p>
+            <button type="button" onclick="closePop()">OK</button>
+        </div>
+    </div>
+    <script>
+        let popUp = document.getElementById("Popup");
+
+        function openPop(){
+            popUp.classList.add("open-pop");
+        }
+        function closePop(){
+                popUp.classList.remove("open-pop");
+            }
+    </script>
+</body>
+</html>
